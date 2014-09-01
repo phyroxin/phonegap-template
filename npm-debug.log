@@ -1,0 +1,67 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'server.js' ]
+2 info using npm@1.4.6
+3 info using node@v0.10.21
+4 warn package.json header@0.1.1 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'server.js', null ]
+7 verbose cache add name=undefined spec="server.js" args=["server.js",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'server.js',
+8 verbose parsed url   path: 'server.js',
+8 verbose parsed url   href: 'server.js' }
+9 silly lockFile dc60ea9e-server-js server.js
+10 verbose lock server.js /home/lamin/.npm/dc60ea9e-server-js.lock
+11 silly lockFile dc60ea9e-server-js server.js
+12 silly lockFile dc60ea9e-server-js server.js
+13 verbose addNamed [ 'server.js', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile a88d15b6-server-js server.js@
+16 verbose lock server.js@ /home/lamin/.npm/a88d15b6-server-js.lock
+17 silly addNameRange { name: 'server.js', range: '*', hasData: false }
+18 verbose url raw server.js
+19 verbose url resolving [ 'https://registry.npmjs.org/', './server.js' ]
+20 verbose url resolved https://registry.npmjs.org/server.js
+21 info trying registry request attempt 1 at 13:10:58
+22 http GET https://registry.npmjs.org/server.js
+23 http 404 https://registry.npmjs.org/server.js
+24 silly registry.get cb [ 404,
+24 silly registry.get   { date: 'Mon, 01 Sep 2014 12:10:59 GMT',
+24 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=0',
+24 silly registry.get     'content-length': '52',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     'x-served-by': 'cache-lcy1122-LCY',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1409573458.937519,VS0,VE158',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 silly lockFile a88d15b6-server-js server.js@
+26 silly lockFile a88d15b6-server-js server.js@
+27 error 404 'server.js' is not in the npm registry.
+27 error 404 You should bug the author to publish it
+27 error 404 It was specified as a dependency of 'site-template'
+27 error 404
+27 error 404 Maybe try 'npm search server'
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, or http url, or git url.
+28 error System Linux 3.11.0-12-generic
+29 error command "node" "/usr/local/bin/npm" "install" "server.js"
+30 error cwd /srv/www/phonegap/phonegap-workshop-master
+31 error node -v v0.10.21
+32 error npm -v 1.4.6
+33 error code E404
+34 verbose exit [ 1, true ]

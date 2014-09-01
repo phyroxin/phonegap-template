@@ -1,0 +1,53 @@
+doctype html
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if !IE]><!-->
+html(lang="en")
+	<!--<![endif]-->
+	head
+		meta(charset="utf-8")
+		title #{title}
+		
+		// CSS
+		link(rel="stylesheet", type="text/css", href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/united/bootstrap.min.css")
+		link(rel="stylesheet", type="text/css", href="./stylesheets/style.css")
+		link(rel="stylesheet", type="text/css", href="./stylesheets/css-loader.css")
+		
+		// Chrome Frame
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		
+		// Meta Data
+		meta(name='viewport', content='width=device-width', initial-scale='1.0', maximum-scale='1', user-scalable='no')
+		meta(name="description", content="")
+		meta(name="keyword", content="")
+		meta(name="keyphrases", content="")
+		
+		meta(name="copyright", content="Redtangle Ltd")
+		meta(name="publisher", content="Redtangle Ltd")
+		meta(name="author", content="Lamin Camps, Andy Talbot")
+		meta(name="robots", content="INDEX, FOLLOW")
+		meta(name="classification", content="GENERAL")
+		meta(name="distribution", content="global")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+		
+		meta(http-equiv="Content-type", content="text/html; charset=UTF-8")
+		meta(http-equiv="Content-Language", content="en-gb, English")
+		meta(http-equiv="Content-Style-Type", content="text/css")
+		
+		// For Facebook
+		meta(property="og:title", content="")
+		meta(property="og:type", content="place")
+		meta(property="og:url", content="")
+		meta(property="og:image", content="")
+		meta(property="og:image", content="")
+		meta(property="og:site_name", content="")
+		meta(property="fb:admins", content="518920895")
+		meta(property="og:description", content="")
+
+	body
+		div(id="appWrap", class="app-wrap-style")
+		div(id="appHeaderWrap", class="app-header-style")
+			div(id="appHeaderText", class="app-header-text-style")
+				h1
+					|#{headerText}
+		block content

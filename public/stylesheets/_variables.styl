@@ -1,0 +1,151 @@
+$color_first	= rgba(204,95,57,1.0)
+$color_second	= rgba(131,130,113,1.0)
+$color_third	= rgba(207,184,106,1.0)
+$color_forth	= rgba(153,133,117,1.0)
+$color_fifth	= rgba(77,77,77,1.0)
+$white			= rgba(255,255,255,1.0)
+$black			= rgba(0,0,0,1.0)
+$green			= #7fac71
+
+$light_color			= tint($color_third,10%) 
+$light_secondary_color	= tint($color_second,60%) 
+$dark_third_colour		= darken($color_third, 30%)
+/* Scalings */
+
+$scale810 = (960/810);
+$scale768 = (768/810);
+$scale480 = (480/810);
+$scale320 = (320/810);
+
+$sizing_810 = 810px;
+$sizing_768 = 768px;
+$sizing_480 = 480px;
+$sizing_320 = 320px;
+
+$spacing_810 = 30px;
+$spacing_768 = 25px;
+$spacing_480 = 15px;
+$spacing_320 = 10px;
+
+$base_h1	 = 60px;
+$base_h1_768 = 50px;
+$base_h1_480 = 45px;
+$base_h1_320 = 30px;
+
+$base_h2 	 = 46px;
+$base_h2_768 = 36px;
+$base_h2_480 = 30px;
+$base_h2_320 = 25px;
+
+$base_h3 	 = 36px;
+$base_h3_768 = 26px;
+$base_h3_480 = 20px;
+$base_h3_320 = 15px;
+
+$base_h4 	 = 32px;
+$base_h4_768 = 22px;
+$base_h4_480 = 18px;
+$base_h4_320 = 12px;
+
+$base_h5 	 = 28px;
+$base_h5_768 = 18px;
+$base_h5_480 = 12px;
+$base_h5_320 = 10px;
+
+$base_h6 	 = 24px;
+$base_h6_768 = 14px;
+$base_h6_480 = 12px;
+$base_h6_320 = 7px;
+
+$base_span  	= 30px;
+$base_span_768  = 25px;
+$base_span_480	= 20px;
+$base_span_320	= 15px;
+
+$base_p  	 = 30px;
+$base_p_768  = 25px;
+$base_p_480	 = 20px;
+$base_p_320	 = 15px;
+
+$font-size-small =  14px;
+$font-size-medium-small = 15px;
+$font-size-medium = 17px;
+$font-size-large = 36px;
+
+/* Mixins */
+
+fontReg()
+	font-family 'sansationregular'
+	
+fontBold()
+	font-family 'sansationbold'
+	
+fontlight()
+	font-family 'sansation_lightlight' 
+
+fontDefault()
+	font-family Arial, Helvetica sans-serif
+
+transit-boost()
+	will-change: transform, all;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden; 
+	-webkit-perspective: 1000;
+	transition: 	 	all 0.3s ease;
+	-moz-transition: 	all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: 	all 0.3s ease;
+	-o-transition: 		all 0.3s ease;
+
+opacity-ease()
+	transition  opacity .25s ease-in-out 
+	-moz-transition  opacity .25s ease-in-out 
+	-webkit-transition  opacity .25s ease-in-out 
+ 
+opacity-instant()
+	transition  opacity 0s linear 
+	-moz-transition  opacity 0s linear 
+	-webkit-transition  opacity 0s linear 
+ 
+width-ease()
+	-webkit-transition  max-width 0.5s ease 
+	-moz-transition  max-width 0.5s ease 
+	-ms-transition  max-width 0.5s ease 
+	-o-transition  max-width 0.5s ease 
+	transition  max-width 0.5s ease 
+ 
+margin-ease()
+	-webkit-transition  margin 0.5s ease 
+	-moz-transition  margin 0.5s ease 
+	-ms-transition  margin 0.5s ease 
+	-o-transition  margin 0.5s ease 
+	transition  margin 0.5s ease 
+
+box-sized()
+	box-sizing border-box 
+	-moz-box-sizing border-box
+
+border-radius($px)  
+	-webkit-border-radius  $px 
+	border-radius  $px 
+
+border-bottom-white($px) 
+	border-bottom solid $px $white
+	
+widthHeightFull()
+	overflow hidden
+	width 100%
+	height auto
+	
+widthHeightAuto()
+	overflow hidden
+	width auto
+	height auto
+	
+globalPadding()
+	padding 20px
+
+clearfix()  
+	float left  
+	clear both 
+ 

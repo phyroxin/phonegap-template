@@ -1,0 +1,1121 @@
+/*======================================================================
+ * fonts
+ *======================================================================
+@font-face 
+	font-family lobster_twoitalic
+	src url('fonts/lobstertwo-italic-webfont.eot')
+	src url('fonts/lobstertwo-italic-webfont.eot?#iefix') format('embedded-opentype')
+	src url('fonts/lobstertwo-italic-webfont.woff') format('woff')
+	src url('fonts/lobstertwo-italic-webfont.ttf') format('truetype')
+	src url('fonts/lobstertwo-italic-webfont.svg#lobster_twoitalic') format('svg')
+	font-weight normal
+	font-style normal
+ */
+
+/*========================================================
+ * CSS styling
+ *========================================================
+ */
+html
+	overflow-y scroll
+	background-color #fff
+	
+body
+	background-color transparent
+
+ html
+,body
+,h1
+,h2
+,h3
+,h4
+,h5
+,p
+,input
+,button
+,a
+,div
+,span
+	font-family 'Trebuchet MS' !important
+
+ h1
+,h2
+,h3
+,h4
+,a
+	//font-family Satisfy
+
+.inner h2
+	font-size 1.5em
+
+h1
+	font-size 30px
+	
+h2
+	font-size 12px
+	line-height 2em
+	
+h3
+	font-size 20px
+	line-height 2em
+
+ ul
+,li
+	list-style none
+	
+.numClass
+	font-size 20px
+
+small
+	font-size 10px
+	
+.container
+	width 960px
+
+/*======================================================================
+ * Header Style
+ *======================================================================
+ */
+ 
+// dev style
+#menu-container 
+	width 100%
+	margin 0px
+	background-color rgba(44,153,180,1)
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	
+#menu-container menu
+	border 0px
+
+#wrapper 
+	height auto 
+ 
+ 
+ .loader
+,.title
+,.reg
+,.lobby
+,.quiz
+	display none
+	
+.brand-header
+	padding 0px
+
+ .brand-header-badge-style
+,.brand-header-bar-style
+,.brand-header-instruction-style
+	position relative
+	overflow hidden
+	width auto 
+	height auto
+	margin 0 auto
+
+.brand-header-badge-style
+	width 368px
+	height 166px
+	background url('/images/top-banner/header-badge.png')
+	background-repeat no-repeat
+	background-position 0px 0px
+	z-index 5
+	
+.brand-header-bar-style
+	overflow visible
+	width 960px
+	height 43px
+	margin-top -90px
+	background url('/images/top-banner/header-bar.png')
+	background-repeat no-repeat
+	background-position 0px 0px
+	z-index 0
+
+.quiz-menu-wrap-style
+	width 300px
+	float left
+	
+ .quiz-user-wrap-style
+,.quiz-user-state-wrap-style
+	width 300px
+	float right
+	z-index 10
+
+ .quiz-menu-style
+,.quiz-user-style
+	list-style none
+	width auto
+	
+ .quiz-menu-style li
+,.quiz-user-style li
+	width auto
+	height auto
+	padding-left 10px
+	padding-right 10px
+	line-height 2.7em
+	float left
+	
+.quiz-user-style li
+	float right
+	
+ .quiz-menu-style li a
+,.quiz-user-style li a
+,.quiz-menu-style li a:visited
+,.quiz-user-style li a:visited
+	color #a2e9fc
+	font-size 20px
+	line-height 1em
+	text-decoration underline
+
+ .quiz-user-style li a:hover
+,.quiz-menu-style li a:hover
+	color #097793
+
+.quiz-user-state-wrap-style	
+	margin-top -65px
+	text-align right
+	z-index 15
+		
+.quiz-user-state-content-style
+	width auto
+	color #1e9dbd
+	padding-right 10px
+	
+.quiz-user-state-content-style p
+	font-family trebuchet_msregular
+	color #097793
+
+.state-signed-style
+	font-family lobster_twoitalic
+	color #1e9dbd
+		
+.brand-header-instruction-style
+	width 960px
+	height 125px
+	margin-top 12px
+	background url('/images/top-banner/header-instruction-banner.png')
+	background-repeat no-repeat
+	background-position 0px 0px
+	background-repeat no=repeat
+	background-position 0px 0px
+	z-index 10
+
+ .instruction-left-wrap-style
+,.instruction-mid-wrap-style
+,.instruction-right-wrap-style
+	width 33.3%
+	height auto
+	float left
+		
+ .instruction-left-content-style
+,.instruction-mid-content-style
+,.instruction-right-content-style
+	padding 17px
+	padding-top 15px
+
+ .instruction-left-content-style h4
+,.instruction-left-content-style p
+,.instruction-right-content-style h4
+,.instruction-right-content-style p
+,.instruction-mid-content-style h4
+,.instruction-mid-content-style p
+	font-size 17px
+	color #c0f2ff
+
+ .instruction-left-content-style h4
+,.instruction-right-content-style h4
+,.instruction-mid-content-style h4
+	font-size 27px
+
+.span-jump-style
+	color #fff
+	
+ .instruction-top-style
+,.instruction-mid-style
+,.instruction-bottom-style
+	width auto
+	padding 5px
+	
+.instruction-top-style
+	height 42px
+	width 100%
+	margin-top -5px
+	margin-bottom 5px
+	text-align center
+	
+.instruction-top-content-style
+	width 100px
+	margin 0 auto
+
+.instruction-top-style h5
+	font-size 40px
+	color #097793
+
+.instruction-mid-style
+	margin-left 1px
+	padding 0px
+	
+ .instruction-mid-style a
+,.instruction-mid-style a:visited
+	display block
+	color #fff
+	background url('/images/top-banner/jump-in-btn.png')
+	background-repeat no-repeat
+	background-position 0px 0px
+	height 43px
+	width 286px
+	text-align center
+	font-size 25px
+	line-height 1.6em
+
+.instruction-mid-style a:hover
+	background-position -286px 0px
+	text-decoration none
+	
+.instruction-bottom-style p
+	font-size 11px
+	color #097793
+	margin 0 auto
+
+header .header-question-panel-wrap
+	display none
+	overflow hidden
+	width 100%
+	background-color #96d3e3
+	//-webkit-border-radius 3px
+	//border-radius 3px
+	margin-top 0px
+
+.header-question-panel-contents
+	display: table-row;
+	overflow hidden
+	width auto
+	height auto
+	
+ .start-wrap
+,.question-header
+,.table-icons
+,.question-time
+,.question-text
+	background-color #d4eff6
+	color #26adcf
+	//-webkit-border-radius 0px
+	//border-radius 0px
+
+.start-wrap
+	width 30%
+	height 120px
+	margin-right 5px
+
+.question-header
+	display table-cell
+	transit()
+	height 120px
+	margin-right 5px
+	border solid 1px #96d3e3
+	border-left solid 1px #d4eff6
+	border-right solid 1px #d4eff6
+	vertical-align: top;
+	
+.table-icons
+	display table-cell
+	width 122px
+	height 122px
+	margin-right 5px
+	border solid 1px #96d3e3
+	
+	
+.table-icon
+	display block
+	width 48%
+	height 48%
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color #26adcf
+	float left
+
+.table-icon:nth-child(odd)
+	margin-right 4px
+	
+.table-icon:nth-child(-n+2)
+	margin-bottom 4px
+	
+.question-time
+	display table-cell
+	width 122px
+	height 122px
+	border solid 1px #96d3e3
+	vertical-align: top;
+	
+.question-text
+	width: 100%
+	height: auto;
+	margin-right: 5px;
+	margin-top: 5px;
+
+#question-wrap h3
+	margin 0
+	line-height 1em
+	
+#question-number-wrap h3
+	font-size 3em
+	margin 0
+	line-height 1em
+	
+ .start-contents
+,.question-header-contents
+,.table-icons-contents
+,.question-time-contents
+,.question-text-contents
+	padding: 10px;
+	
+.question-time-contents
+	padding: 8px;
+
+.table-icons-contents
+	width: 122px;
+	height: 122px;
+	
+/*========================================================
+ * Menu style
+ *========================================================
+ */
+#menu-container menu
+	z-index 5
+
+.sign-in-wrap-style
+	position relative
+	margin-top 5px
+	margin-right 9px
+	float right
+	z-index 600
+
+#sign-in-wrap label
+	width 100%
+	background transparent
+	
+ .cmtWrap
+,.commentWrap
+	display block
+	color #fff
+	background-color #1a5767
+	width 100%
+	height 60px
+	padding 10px
+
+.cmtWrap div
+	width 400px
+	float right
+	
+.commentWrap div
+	width 400px
+	float left
+
+.cmtWrap div:nth-child(2)
+	padding 3px
+	margin-left 10px
+
+.arrow-wrap
+	border-top-width 20px
+	border-top-style solid
+	border-top-color transparent
+	border-right-width 20px
+	border-right-style solid
+	border-right-color #1a5767
+	border-left-width 30px
+	border-left-style solid
+	border-left-color transparent
+	margin-top -15px
+	margin-right 40px
+	position relative
+	float right
+	
+/*======================================================================
+ * Content style
+ *======================================================================
+ */ 
+	
+ .header-style
+,.connect-style
+,.input-style
+,.list-style
+	background-color #fff
+	padding 0px
+	/*
+	moz-box-shadow		0px 0px 5px #ccc
+	-ms-box-shadow		0px 0px 5px #ccc
+	-webkit-box-shadow	0px 0px 5px #ccc
+	box-shadow 			0px 0px 5px #ccc
+	*/
+
+.input-style
+	padding 0px
+	margin 0px
+
+#lobby-wrap
+	background-color #fff
+
+.cntWrap
+	width:25%
+	float right
+	
+.col
+	margin-bottom 10px
+	overflow hidden
+
+.control-wrap
+	margin-bottom 10px
+	
+.closeClass
+	display none
+	
+ .single-model
+,.answer-model	
+	display block
+	margin-top 10px
+	margin-bottom 10px
+
+	
+ .answerContainer
+,.voteWrap
+,.answerWrap
+,.timerContainer
+	width 100%
+	height auto
+	padding 10px
+	float left
+
+.timerContainer
+	width 29%
+	background-color yellow
+	float right
+	
+.answerContainer
+	cursor pointer
+
+.answerContainer
+	padding 5px
+	color #17505e
+	background-color #cfe4e9
+	margin-bottom 10px
+	-moz-border-radius  10px
+	border-radius		10px
+	/*
+	moz-box-shadow		0px 0px 10px #aaa
+	-ms-box-shadow		0px 0px 10px #aaa
+	-webkit-box-shadow	0px 0px 10px #aaa
+	box-shadow 			0px 0px 10px #aaa
+	*/
+	transit() 
+	clear both
+	
+.answerContainerOver
+	color #c50c0c
+	background-color #eed500
+	
+.voteWrap
+	width 30px
+	-moz-border-radius   10px
+	border-radius		 10px
+	color #fff
+	background-color #96bec8
+	border #5e8d98 1px solid
+	text-shadow 0px -1px #4199ae
+	moz-box-shadow		inset 0px 0px 5px #4199ae
+	-ms-box-shadow		inset 0px 0px 5px #4199ae
+	-webkit-box-shadow	inset 0px 0px 5px #4199ae
+	box-shadow 			inset 0px 0px 5px #4199ae
+	
+.answerWrap {
+	overflow: hidden 
+	width: auto 
+	text-shadow: 0px 1px #fff 
+}
+
+.answerText
+	overflow hidden
+	width auto
+	float left
+	
+.timerContainer
+	background-color #eee
+	
+.timerWrap
+	cursor pointer
+	
+ .userIcon	
+,.userMarker	
+	min-height 20px
+	min-width 20px
+	background-color #aaa
+	color #fff
+	border 3px #ccc solid
+	-moz-border-radius  10px 
+	border-radius		: 10px 
+	moz-box-shadow		inset 0px 0px 5px #888
+	-ms-box-shadow		inset 0px 0px 5px #888
+	-webkit-box-shadow	inset 0px 0px 5px #888
+	box-shadow 			inset 0px 0px 5px #888
+	transit()
+	float left
+	
+.userMarker
+	position absolute
+	top 0px
+	left 0px
+	opacity 0
+
+.moveIcon	
+	top 200px
+	left 400px
+	opacity 1
+	
+.userName
+	margin-left 25px
+	float left
+	
+.userText
+	overflow hidden
+	width auto
+	float left
+	
+.userBox
+	width 20px
+	height 20px
+	margin-left 10px
+	float left
+	
+/*======================================================================
+ * Lobby style
+ *======================================================================
+ */
+.table-model
+	background-color #2f3f43
+	color #fff
+	width 30.32%
+	height auto
+	margin 1%
+	opacity 1
+	border 1px solid transparent 
+	moz-box-shadow		0px 0px 5px #777
+	-ms-box-shadow		0px 0px 5px #777
+	-webkit-box-shadow	0px 0px 5px #777
+	box-shadow 			0px 0px 5px #777
+	-moz-border-radius  5px 
+	border-radius		5px 
+	transit()
+	-webkit-backface-visibility hidden /* get rid of animation flicker */
+	-webkit-transform-style 	preserve-3d /* get rid of animation flicker */
+	cursor pointer
+	float left
+
+.table-over
+	/*background-position 120px 10px*/
+	opacity 1
+	
+.table-wrap
+	width 97%
+	height auto
+	padding 3%
+	
+.table-header-wrap
+	overflow hidden
+	width 100%
+	height auto 
+	margin-bottom 5px
+	
+.table-header-wrap h4
+	display: block;
+	float: left;
+	font-size 20px
+	color #d7d7d7
+	line-height 1em
+	margin 0
+	/*text-shadow 0px -1px #aa350c*/
+	
+.table-header-wrap p
+	display: block;
+	float: right;
+	font-size 15px
+	/*text-shadow 0px -1px #aa350c*/
+
+.table-user-wrap
+	-moz-border-radius  3px 
+	border-radius		3px 
+	background-color #b0b0b0
+	
+.table-user-image
+	width auto
+	float left
+	
+.table-user-image img
+	margin-right 5px
+	
+.table-user-text
+	/*float left*/
+
+.table-user-text h5
+	font-weight: normal;
+	display block
+	overflow hidden
+	font-size 1.3em
+	line-height 2em
+	padding-left 10px
+	margin 0
+	text-shadow 0px -1px #848484
+	
+.table-user-stat
+	width 30px
+	height 30px
+	-moz-border-radius 20px
+	-webkit-border-radius 20px
+	border-radius 20px
+	box-shadow: 0px 1px 1px #fff;
+	background-color #097793
+	color #fff
+	padding: 7px;
+	padding-top: 3px;
+	margin-top -35px
+	margin-right 5px
+	float right
+	
+.table-user-stat p
+	text-shadow 0px -1px #136074
+
+/*======================================================================
+ * Timer
+ *======================================================================
+ */
+ .timer
+,.nodule
+	background url(/images/timer-sprite.svg)
+	background-repeat no-repeat
+	width 104px
+	height 104px
+
+.timer
+	position relative
+
+.nodule 
+	position absolute
+	right 0 
+	top 0
+	background-position 0 -104px
+
+ .timer .tleft
+,.timer .tright
+	position absolute
+	top 6px
+	width 46px 
+	height 92px
+	overflow hidden
+
+.timer .tleft 
+	left 6px
+
+.timer .tright 
+	right 6px
+
+ .timer .tleft img
+,.timer .tright img 
+	width 92px 
+	height 92px
+
+.timer .tleft img 
+	display none
+
+.timer .tright img 
+	margin-left -46px
+	
+.timer-text-style
+	font-family Satisfy
+	margin 0px
+	text-shadow 0px 1px #86d7ec
+
+/*======================================================================
+ * Register
+ *======================================================================
+ */
+.inputClass
+	width 300px
+	transit() 
+
+.expandInput	
+	width 90%
+
+/*======================================================================
+ * Result style
+ *======================================================================
+ */
+.results
+	padding 10px
+	
+#results-wrap
+	width auto
+	height auto
+	padding 20px
+	background-color #fcfeba
+	color #26adcf
+	-webkit-border-radius 3px
+	-webkit-border-radius 3px
+	border-radius 3px
+	border 1px dotted #dfa66a
+	
+.result-style
+	width auto
+	height auto
+	color black
+	
+ .result-style h4	
+,.result-style p	
+	margin 0
+	color #de7d7d
+	line-height 1.5em
+
+.result-style h4
+	font-size 30px
+	line-height 1.5em
+
+/*======================================================================
+ * Dev tools
+ *======================================================================
+ */
+.dev-wrap-outer-style
+	width 960px
+	height 30px
+	margin 0 auto
+	
+.dev-wrap-style
+	display none
+	position relative
+	overflow hidden
+	width 100%
+	height 0px
+	background-color #ddd
+	border-bottom solid 1px #ccc
+
+.dev-contents-style
+	width 940px
+	height auto
+	margin 0 auto
+
+.dev-open
+	display block
+	height 70px
+
+.titleWrap
+	width:100%
+	height auto
+	float left
+
+.open-dev-btn
+	width 100px
+	height 35px
+	color #fff
+	padding-top 5px
+	margin-top -5px
+	margin-left 10px
+	
+/*======================================================================
+ * Admin
+ *======================================================================
+ */
+.container
+	padding 0px
+
+#dev-wrap
+	background rgba(0,0,0,0.15)
+	
+.dev-header-menu-wrap 
+	padding-left 5px
+	background rgba(0,0,0,0.1)
+
+ #admin-quiz-details-wrap
+,#admin-quiz-questions-wrap
+	 h4
+		display block
+		overflow hidden
+		width auto
+		height auto
+		padding-bottom 10px
+		padding-top 10px
+		font-size 1em
+		border-bottom #bbb 1px dotted
+		line-height 2em
+		margin 0
+		
+		a
+		,a:visited
+			display block
+			width auto
+			height auto
+			color rgba(221, 72, 20, 1)
+			background rgba(221, 72, 20, 0.3)
+			cursor pointer
+			padding-left 10px
+			padding-right 10px
+			margin-left 5px
+			margin-bottom 5px
+			border-bottom rgba(221, 72, 20, .7) 5px solid
+			line-height 2em
+			border-radius(5px)
+			float left
+			
+		a:hover
+			text-decoration none
+			color rgba(255,255,255,1)
+			background rgba(221, 72, 20, 1)
+
+.admin-selected
+	color rgba(255,255,255,1)
+	background rgba(221, 72, 20, 1)
+
+.enter-quiz-data 
+	select
+	,input
+		float right
+	
+label
+	width 300px
+	padding 5px
+	padding-left 10px
+	margin-bottom 5px
+	font-weight normal
+
+label:nth-child(odd)
+	background rgba(0,0,0,0.07)
+
+.label-style
+	display block
+	float: left;
+
+.option-label-style
+	margin-left 20px
+
+.enter-btn
+	margin-top 10px
+
+.submit-Btn
+	display none
+
+.date-format-style
+	font-size 1em
+	color #bbb
+	
+.bottom-btn-block
+	padding-left 10px
+	line-height 3em
+	background rgba(0,0,0,0.15)
+	border-top dotted rgba(38,173,207,0.5) 1px
+
+.enter-quiz-data
+,.edit-quiz-data
+,.assign-question-data
+,.edit-question-data
+,.upload-question-data
+	display none
+	padding-left 0px
+	
+.quiz-list-item
+	display block
+	overflow hidden
+	width 100%
+	height auto
+	padding-top 5px
+	padding-bottom 5px
+	font-size 1em
+	border 0
+	margin 0
+	background rgba(38,173,207,0.3)
+	border-bottom dotted rgba(38,173,207,0.5) 1px
+	float left
+	
+	a
+	,a:visited
+	,.make-active-wrap
+		display block
+		width 80%
+		height 33px
+		color rgba(255,255,255,1)
+		background rgba(38, 173, 207, 0.3)
+		cursor pointer
+		padding-left 5px
+		padding-right 5px
+		margin-left 5px
+		line-height 2em
+		border-radius(5px)
+		float left
+		
+	a:hover
+		text-decoration none
+		
+	.make-active-wrap
+		background rgba(38, 173, 207, 0.3)
+		width 16%
+		cursor auto
+		float right
+		
+		input
+			width 100%
+			height 25px
+			background rgba(255,255,255,1)
+			cursor pointer
+	
+.top-submit-btn
+,.top-submit-btn:visited
+,#submit-upload
+,#submit-upload:visited
+	width auto
+	height auto
+	color #fff
+	line-height 2
+	border-radius 3px
+	border 0px
+	background rgba(221,72,20,1)
+	
+.top-submit-btn:hover	
+,#submit-upload:hover	
+	background rgba(175,74,38,1)
+
+input[type="file"]
+	display block
+	padding 10px
+	
+/*======================================================================
+ * mobile style
+ *======================================================================
+.debug-wrap
+	margin-top 100px
+	transit()
+
+#menu-container menu 
+	padding-top 20px
+
+@media only screen and (min-width: 768px) and (max-width: 959px)
+	.debug-wrap
+		margin-top 100px
+ */
+ 
+@media only screen and (min-width: 200px) and (max-width: 992px)
+
+	.container
+		width 100%
+
+	.table-user-text h5
+		font-size 1em
+		line-height 2.5em
+		padding-left 5px
+
+@media only screen and (min-width: 480px) and (max-width: 767px)
+	#wrapper
+		height auto
+		
+	.sign-in-wrap-style
+		z-index 1010
+	
+	.titleWrap
+		margin-top 0px
+		
+	.table-model
+		width 45%
+	
+@media only screen and (min-width: 200px) and (max-width: 639px)
+	.connect-style
+		padding 0px
+	
+	.connect-style ul#tablelist
+		margin 0px
+		padding 0px
+	
+	.table-model
+		width 100%
+		margin 0px
+		margin-top 0px
+		margin-bottom 1px
+		
+	label
+		width 100%
+
+@media only screen and (min-width: 200px) and (max-width: 500px)
+	
+	.table-icons
+		display none
+	
+	.commentWrap
+		 div
+		,input
+			width 100%
+	
+@media only screen and (min-width: 200px) and (max-width: 479px)
+	#wrapper
+		height auto
+		
+	.titleWrap
+		margin-top 0px
+		
+	#menu-container #user
+		position absolute
+		width auto
+		right 9px
+		top -24px
+		color #097793
+		font-size 14px
+		text-align right
+		pointer-events none
+		
+	#menu-container menu
+		padding-top 0px
+		
+	.sign-in-wrap-style
+		width 95%
+		margin-top -440px
+		z-index 1010
+		
+	.sign-in-wrap-style
+		margin-top 0px
+		
+	#sign-in-wrap label
+		width 100%
+	
+	.arrow-wrap
+		margin-right 90px
+		 
+	.cmtWrap
+		height 80px
+		 div
+		,label 
+			width 100%
+		
+	.inputClass
+		width 100%	
+		
+	.dev-wrap-outer-style
+		width 100%
+	
+	.dev-open 
+		display block
+		height 120px
+	
+	.dev-contents-style 
+		width 100%
+		
+	.table-icon 	
+		width 100%
+		height 25%
+		margin-bottom 4px
+	
+/*
+@media only screen and (min-width: 200px) and (max-width: 377px)
+	.sign-in-wrap-style
+		margin-top -460px
+		
+@media only screen and (min-width: 200px) and (max-width: 373px)
+	.sign-in-wrap-style
+		margin-top -482px
+	
+	.sign-in-wrap-style
+		margin-top 0px
+
+
+@media only screen and (min-width: 200px) and (max-width: 319px)
+	.debug-wrap
+		margin-top 300px
+*/
