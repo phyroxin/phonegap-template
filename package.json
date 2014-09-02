@@ -25,6 +25,7 @@
     "gulp-coffee": "^2.1.1",
     "gulp-coffeelint": "^0.3.3",
     "gulp-concat": "^2.3.4",
+    "gulp-copy": "0.0.2",
     "gulp-gzip": "0.0.8",
     "gulp-header": "^1.0.5",
     "gulp-if": "^1.2.4",

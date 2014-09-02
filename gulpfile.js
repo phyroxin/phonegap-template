@@ -3,6 +3,7 @@ var  gulp        = require('gulp')
 	,fs     	 = require('fs')
 	,coffee      = require('gulp-coffee')
     ,coffeelint  = require('gulp-coffeelint') 
+    ,copy		 = require('gulp-copy') 
 	,header		 = require('gulp-header')
     ,jshint      = require('gulp-jshint')
     ,jade		 = require('gulp-jade')
@@ -115,7 +116,7 @@ gulp.task('coffee-compile', function(){
 	    .pipe(gulp.dest(paths.coffeeDest));
 });
 
-gulp.task('html-compile', function(){
+gulp.task('phonegap-compile', function(){
 	
 	var YOUR_LOCALS = {
 		 filename: 'index.html'
@@ -129,7 +130,27 @@ gulp.task('html-compile', function(){
 		.pipe(jade({
 			locals: YOUR_LOCALS
 		}))
-	    .pipe(gulp.dest('./'));
+	    .pipe(gulp.dest('./phoneGapCompile'));
+	
+	gulp.src([
+			 './public/images/*.jpg'
+			,'./public/images/*.png'
+			,'./public/images/*.svg'
+			,'./public/images/*.gif'
+		])
+	    .pipe(gulp.dest('./phoneGapCompile/images'));
+		
+	gulp.src('./public/stylesheets/*.css')
+	    .pipe(gulp.dest('./phoneGapCompile/stylesheets'));
+	
+	gulp.src('./public/js/*.js')
+	    .pipe(gulp.dest('./phoneGapCompile/js'));
+		
+	gulp.src('./public/js/storage/*.js')
+	    .pipe(gulp.dest('./phoneGapCompile/js/storage'));
+		
+	gulp.src('./public/js/libs/*.js')
+	    .pipe(gulp.dest('./phoneGapCompile/js/libs'));
 });
 
 // automate tasks and create watchers
