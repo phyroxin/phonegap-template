@@ -142,6 +142,14 @@ gulp.task('phonegap-compile', function(){
 		
 	gulp.src('./public/stylesheets/*.css')
 	    .pipe(gulp.dest('./phoneGapCompile/stylesheets'));
+		
+	gulp.src([
+			 './public/stylesheets/fonts/*.eot'
+			,'./public/stylesheets/fonts/*.svg'
+			,'./public/stylesheets/fonts/*.ttf'
+			,'./public/stylesheets/fonts/*.woff0'
+		])
+	    .pipe(gulp.dest('./phoneGapCompile/stylesheets/fonts'));
 	
 	gulp.src('./public/js/*.js')
 	    .pipe(gulp.dest('./phoneGapCompile/js'));

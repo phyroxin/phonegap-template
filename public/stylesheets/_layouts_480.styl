@@ -1,0 +1,33 @@
+/* #Website 480 // 
+================================================== */
+
+$content-width = $sizing_480 - ($spacing_480 * 2)
+
+@media only screen and (min-width: 480px) and (max-width: 767px) 
+	
+	.app-header-style
+		width 100%
+		background $color_first
+		height 150px
+
+		.app-header-text-style
+			width $content-width
+			margin 0 auto
+			
+			h1 
+				fontlight()
+				font-size $base_h1_480
+				widthHeightAuto()
+				color $white
+				padding 20px
+				
+	.search-view-wrap
+		width 100%
+		height 150px
+		
+		.search-view
+			width $content-width
+			margin 0 auto
+			
+			.search-view-padding
+				padding 20px

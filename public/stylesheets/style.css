@@ -14,31 +14,31 @@ global-reset()
  */
 @font-face {
   font-family: 'sansationbold';
-  src: url("sansation-bold-webfont.eot");
-  src: url("sansation-bold-webfont.eot?#iefix") format('embedded-opentype');
-  src: url("sansation-bold-webfont.woff") format('woff');
-  src: url("sansation-bold-webfont.ttf") format('truetype');
-  src: url("sansation-bold-webfont.svg#sansationbold") format('svg');
+  src: url("fonts/sansation-bold-webfont.eot");
+  src: url("fonts/sansation-bold-webfont.eot?#iefix") format('embedded-opentype');
+  src: url("fonts/sansation-bold-webfont.woff") format('woff');
+  src: url("fonts/sansation-bold-webfont.ttf") format('truetype');
+  src: url("fonts/sansation-bold-webfont.svg#sansationbold") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'sansation_lightlight';
-  src: url("sansation-light-webfont.eot");
-  src: url("sansation-light-webfont.eot?#iefix") format('embedded-opentype');
-  src: url("sansation-light-webfont.woff") format('woff');
-  src: url("sansation-light-webfont.ttf") format('truetype');
-  src: url("sansation-light-webfont.svg#sansation_lightlight") format('svg');
+  src: url("fonts/sansation-light-webfont.eot");
+  src: url("fonts/sansation-light-webfont.eot?#iefix") format('embedded-opentype');
+  src: url("fonts/sansation-light-webfont.woff") format('woff');
+  src: url("fonts/sansation-light-webfont.ttf") format('truetype');
+  src: url("fonts/sansation-light-webfont.svg#sansation_lightlight") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'sansationregular';
-  src: url("sansation-regular-webfont.eot");
-  src: url("sansation-regular-webfont.eot?#iefix") format('embedded-opentype');
-  src: url("sansation-regular-webfont.woff") format('woff');
-  src: url("sansation-regular-webfont.ttf") format('truetype');
-  src: url("sansation-regular-webfont.svg#sansationregular") format('svg');
+  src: url("fonts/sansation-regular-webfont.eot");
+  src: url("fonts/sansation-regular-webfont.eot?#iefix") format('embedded-opentype');
+  src: url("fonts/sansation-regular-webfont.woff") format('woff');
+  src: url("fonts/sansation-regular-webfont.ttf") format('truetype');
+  src: url("fonts/sansation-regular-webfont.svg#sansationregular") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -296,12 +296,83 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+input,
+textarea,
+select,
+button {
+  font-family: 'yanone_kaffeesatzlight';
+  font-size: 20px;
+  color: #666;
+  background: #f6f6f6;
+  width: 200px;
+  padding: 7px 10px;
+  margin-right: 3px;
+  border: 1px solid #b9b9b9;
+  border-top-color: #a4a4a4;
+  -moz-box-shadow: 0 1px 0 #fff inset 0 1px 1px rgba(0,0,0,0.17);
+  -ms-box-shadow: 0 1px 0 #fff inset 0 1px 1px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 0 1px 0 #fff inset 0 1px 1px rgba(0,0,0,0.17);
+  box-shadow: 0 1px 0 #fff inset 0 1px 1px rgba(0,0,0,0.17);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  float: left;
+}
+.sbtBtn {
+  width: auto;
+  border: 0px;
+  background-color: $color-primary;
+  color: #fff;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  float: left;
+}
+.sbtCheckout {
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+  margin-right: 15px;
+  float: right;
+}
+.noRightMargin {
+  margin-right: 0px;
+}
+.checkout {
+  float: right;
+}
+#sbt-view-cart {
+  display: none;
+}
+.input-short {
+  width: 43.9%;
+}
+.input-long {
+  width: 93.5%;
+}
+.sbtBtn:hover,
+.sbtBtn:active {
+  background: #f8f5b0;
+  color: #d04186;
+  border: 0px;
+}
+.button-right {
+  float: right;
+  margin-right: 10px;
+}
 html,
 button,
 input,
 select,
-textarea {
+textarea,
+a {
   color: #222;
+  font-family: 'sansation_lightlight', Arial, Helvetica sans-serif;
 }
 body {
   font-size: 1em;
@@ -442,6 +513,35 @@ body {
 .header-button-left {
   left: 4;
 }
+.app-header-style {
+  width: 100%;
+  background: #cc5f39;
+  height: 150px;
+}
+.app-header-style .app-header-text-style {
+  width: 750px;
+  margin: 0 auto;
+}
+.app-header-style .app-header-text-style h1 {
+  font-family: 'sansation_lightlight', Arial, Helvetica sans-serif;
+  font-size: 60px;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  color: #fff;
+  padding: 20px;
+}
+.search-view-wrap {
+  width: 100%;
+  height: 150px;
+}
+.search-view-wrap .search-view {
+  width: 750px;
+  margin: 0 auto;
+}
+.search-view-wrap .search-view .search-view-padding {
+  padding: 20px;
+}
 .search-bar {
   background: #ccc;
   height: 32px;
@@ -561,6 +661,66 @@ h2 {
   width: 100px;
   height: 100px;
 }
-/*@import '/public/stylesheets/_layouts_768'
-@import '/public/stylesheets/_layouts_480'
-@import '/public/stylesheets/_layouts_320'*/
+/*@import '/public/stylesheets/_layouts_768'*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .app-header-style {
+    width: 100%;
+    background: #cc5f39;
+    height: 150px;
+  }
+  .app-header-style .app-header-text-style {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .app-header-style .app-header-text-style h1 {
+    font-family: 'sansation_lightlight', Arial, Helvetica sans-serif;
+    font-size: 45px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+  }
+  .search-view-wrap {
+    width: 100%;
+    height: 150px;
+  }
+  .search-view-wrap .search-view {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .search-view-wrap .search-view .search-view-padding {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .app-header-style {
+    width: 100%;
+    background: #cc5f39;
+    height: 150px;
+  }
+  .app-header-style .app-header-text-style {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .app-header-style .app-header-text-style h1 {
+    font-family: 'sansation_lightlight', Arial, Helvetica sans-serif;
+    font-size: 30px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+  }
+  .search-view-wrap {
+    width: 100%;
+    height: 150px;
+  }
+  .search-view-wrap .search-view {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .search-view-wrap .search-view .search-view-padding {
+    padding: 20px;
+  }
+}
